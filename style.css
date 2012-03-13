@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400&text=0123456789-);
+
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  width: 100%;
+  background-color: #30488f;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 30px;
+}
+
+#title {
+  padding-left: 10px;
+}
+
+#scoreboard {
+  margin: 10px;
+}
+
+div.player {
+  width: 50%;
+  height: 40px;
+  font-size: 35px;
+  margin-bottom: 5px;
+  padding: 0;
+  line-height: 39px;
+  box-shadow: 0px 3px 0px #aaaaaa;
+  /*
+  border-radius: 20px;
+  background-color: #30488F;
+  color: white;
+     */
+  border-bottom: solid 2px #30488F;
+}
+
+div.player:nth-of-type(1) { margin-left: 0px; }
+div.player:nth-of-type(2) { margin-left: 30px; }
+div.player:nth-of-type(3) { margin-left: 60px; }
+div.player:nth-of-type(4) { margin-left: 90px; }
+div.player:nth-of-type(5) { margin-left: 120px; }
+div.player:nth-of-type(6) { margin-left: 150px; }
+div.player:nth-of-type(7) { margin-left: 180px; }
+div.player:nth-of-type(8) { margin-left: 210px; }
+div.player:nth-of-type(9) { margin-left: 240px; }
+div.player:nth-of-type(10) { margin-left: 270px; }
+div.player:nth-of-type(11) { margin-left: 300px; }
+div.player:nth-of-type(12) { margin-left: 330px; }
+
+div.player span { display: table-cell; }
+span.name {
+  padding-left: 5px;
+  width: 300px;
+}
+span.point-correct { width: 50px; color: #002595; }
+span.point-wrong { width: 50px; color: #D50000; }
+
+
+span.point-correct, span.point-wrong {
+  font-family: 'Open Sans';
+}
+
+div.loser span.name {
+  color: #888888;
+}
+div.loser span.point-correct {
+  color: #6D7DA7;
+}
+div.loser span.point-wrong {
+  color: #AF7AA3;
+}
+
+div.winner span.name {
+  color: #BF6000;
+}
+
+span.indicator {
+  width: 0.5em;
+  font-size: 80%;
+  color: red;
+  vertical-align: middle;
+}

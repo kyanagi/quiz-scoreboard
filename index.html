@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>n○n×</title>
+    <script type="text/javascript" src="knockout-2.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body data-bind="event: {keydown: onKeyDown}">
+    <table id="header">
+      <tr><td id="title" data-bind="text: title"></td><td id="timer" data-bind="text: watch.timestr"></td></tr>
+    </table>
+    <div id="scoreboard">
+      <div class="players" data-bind="foreach: players">
+        <div class="player" data-bind="css: { winner: isWinner, loser: isLoser, selected: selected }">
+          <span class="indicator" data-bind="text: selected() ? '&raquo;' : '' ">&gt;</span><span class="name" data-bind="text: name"></span><span class="point-correct" data-bind="text: pointCorrect"></span><span class="point-wrong" data-bind="text: pointWrong"></span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
